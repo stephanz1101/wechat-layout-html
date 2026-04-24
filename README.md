@@ -82,6 +82,26 @@ Recommended flow:
 1. run `wechat-layout-html` to generate final WeChat-safe HTML
 2. run `wechat-mp-publish` to upload that HTML to the draft box
 
+## Agent Prompt Examples
+
+Use prompts like these after installation:
+
+```text
+Use wechat-layout-html to turn this Markdown article into WeChat-safe HTML.
+```
+
+```text
+按微信公众号排版规则，把这篇 Markdown 转成微信兼容 HTML。
+```
+
+```text
+把这篇文章排成蓝色 div-only 风格的公众号 HTML，不要改原文内容。
+```
+
+```text
+Generate final WeChat Official Account HTML from this article draft. Keep all styling inline and avoid p/h1/h2/blockquote/section.
+```
+
 ## When To Use
 
 Use this skill when you need:
