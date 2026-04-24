@@ -1,0 +1,45 @@
+name: wechat-layout-html
+version: 1.0.0
+description: |
+  Turn Markdown or article drafts into WeChat Official Account HTML using a
+  locked blue div-only layout system optimized for 公众号 paste compatibility.
+
+  Works as a standalone reusable skill repository for agent environments that
+  support GitHub-based skill installation.
+
+author: stephanz1101
+repository: https://github.com/stephanz1101/wechat-layout-html
+
+compatibility:
+  platforms:
+    - codex
+    - claude-code
+    - openclaw
+    - nanoclaw
+
+  requirements:
+    - Markdown or article draft input
+    - Agent environment with local skill support
+
+dependencies: {}
+
+triggers:
+  - "公众号排版"
+  - "微信 HTML"
+  - "微信兼容排版"
+  - "粘贴到公众号"
+  - "wechat layout html"
+  - "wechat official account html"
+
+tags:
+  - wechat
+  - html
+  - markdown
+  - layout
+  - publishing
+  - skill
+
+examples:
+  - "把这篇 Markdown 排成微信公众号 HTML"
+  - "Generate WeChat Official Account HTML from this article draft"
+  - "按蓝色 div-only 规则输出微信兼容 HTML"
