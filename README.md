@@ -39,21 +39,48 @@ wechat-layout-html/
 
 ### Codex
 
-Use the GitHub repo path with the local skill installer:
+Clone this repository into your Codex skills directory:
+
+```bash
+git clone https://github.com/stephanz1101/wechat-layout-html.git ~/.codex/skills/wechat-layout-html
+```
+
+If the directory already exists, update it with:
+
+```bash
+cd ~/.codex/skills/wechat-layout-html && git pull
+```
+
+You can also point any GitHub-based skill installer at:
 
 ```text
 stephanz1101/wechat-layout-html
 ```
 
-If you already have Codex skill installation wired up, install this repository as a standalone skill repo.
+### Other Agent Environments
 
-### Manual Fallback
-
-If your agent environment does not support direct GitHub skill install, copy this repository into your local skills directory as:
+If your environment does not support direct GitHub skill install, copy this repository into that agent's local skills directory under:
 
 ```text
 .../skills/wechat-layout-html/
 ```
+
+The repository root is already structured as a standalone skill package, so no extra rearrangement is needed.
+
+## Pair With Draft Publishing
+
+This skill handles layout only.
+
+If you also need one-step upload into the WeChat Official Account draft box, pair it with:
+
+```text
+stephanz1101/wechat-mp-publish
+```
+
+Recommended flow:
+
+1. run `wechat-layout-html` to generate final WeChat-safe HTML
+2. run `wechat-mp-publish` to upload that HTML to the draft box
 
 ## When To Use
 
